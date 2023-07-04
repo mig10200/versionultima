@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Aqui empieza el link de los iconos-->
+    <script src="https://kit.fontawesome.com/7739207e90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Este link es para el icono de mi pagina-->
+    <link rel="icon" type="image/x-icon" href="img/musica.png">
+</head>
+
+<body>
+    <div class="card">
+        <img id="logoimg" class="seccion1" src="img/losnotantriste.jpg" alt="logo" />
+        <div class="seccion2">
+            <div id="progressBar">
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div class="seccion3">
+            <audio autoplay id="music">
+                <source src="music/Nanpa_Básico.mp3" type="audio/ogg">
+            </audio>
+            <div class="icons">
+                <button id="back" class="fa fa-step-backward icon"></button>
+                <button onclick="played()" class="fa fa-play icon"></button>
+                <button onclick="pause()" class="fa fa-pause icon"></button>
+                <button id="forward" class="fa fa-step-forward icon"></button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="preloader"></div> -->
+    <h3 id="titulomusic" class="titulo">Los No Tan Tristes</h3>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
